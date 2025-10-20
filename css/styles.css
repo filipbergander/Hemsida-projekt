@@ -677,11 +677,11 @@ p {
     list-style: none;
 }
 
-.art {
+.artitaly {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 95%;
     align-items: center;
     margin: 0 auto;
     line-height: 1.6;
@@ -689,24 +689,34 @@ p {
     margin-bottom: 100px;
 }
 
-.images {
+.italian {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 95%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 1200px;
     margin-right: 5px;
     border-radius: 15px;
+    margin: 0 auto;
     gap: 1px;
+    box-sizing: border-box;
 }
 
-.images img {
+/* Bilder inom italien.html på rad, och med ett gap */
+.italian img {
+    flex: 0 0 calc(50% - 6px);
+    max-width: calc(50% - 6px);
     width: 100%;
     height: auto;
+    display: block;
+    object-fit: cover;
     border-radius: 15px;
 }
 
+.textdolomit {
+    width: 67%;
+}
 
 .Venice {
     width: 90%;
@@ -909,12 +919,6 @@ p {
         height: auto;
     }
 
-    .images img {
-        width: 80%;
-        height: auto;
-        border-radius: 15px;
-    }
-
     .Venice {
         width: 80%;
     }
@@ -960,8 +964,7 @@ p {
 
     /* Kolumn på allt inom "om oss" */
     .About-inner,
-    .Aboutsecond,
-    img {
+    .Aboutsecond img {
         flex-direction: column;
         width: 75%;
     }
