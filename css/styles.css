@@ -451,7 +451,7 @@ p {
     gap: 1.25rem;
 }
 
-/* Andra bilden */
+/* Andra textspalten och bilden */
 .Aboutsecond .imgmountain {
     flex: 0 0 450px;
     width: 450px;
@@ -611,7 +611,7 @@ p {
 }
 
 /* Hur knappen ska agera när man exempelvis tabbat till den, för att göra den tydligare */
-.btnback:focus {                
+.btnback:focus {
     background-color: rgb(21, 114, 94);
     color: white;
 }
@@ -1035,7 +1035,7 @@ h3 {
 
     /* Kolumn på allt inom "om oss" */
     .About-inner,
-    .Aboutsecond img {
+    .Aboutsecond {
         flex-direction: column;
         width: 75%;
     }
@@ -1088,7 +1088,7 @@ h3 {
 
     /* förändrat bildstorlek */
     .Articles img {
-        width: 70%;
+        width: 90%;
         height: auto;
     }
 
@@ -1187,14 +1187,32 @@ h3 {
     }
 
     /* Texten och dess ram för inom Italien.html */
+    .textdolomit {
+        width: 90%;
+
+    }
+
     .textdolomit p {
-        width: 100%;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .textcroatian {
+        width: 90%;
     }
 
     /* Text inom kroatien.html */
-    .textcroatian {
-        font-size: 0.8rem;
+    .textcroatian p {
+        font-size: 0.9rem;
     }
 
+    /* Vidden till 90% vid mindre enheter */
+    .Terms,
+    .Policy {
+        width: 90%;
+    }
+
+    .Sitemap {
+        width: 100%;
+        height: auto;
+    }
 }
