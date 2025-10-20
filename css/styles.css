@@ -125,7 +125,6 @@ nav {
     grid-area: faq;
     position: sticky;
     top: 1.5rem;
-    left: 1rem;
     background-color: rgb(177, 214, 214);
     padding: 0.8rem;
     border-radius: 10px;
@@ -571,9 +570,8 @@ p {
     font-size: 15px;
 }
 
-/* Knapp för Kroatien, italien och afrika */
-.indexbtn,
-btnback {
+/* Knapp för Kroatien, italien och afrika och tillbaka knapp */
+.indexbtn {
     color: rgb(0, 0, 0);
     background-color: #df9d0f;
     border: none;
@@ -587,7 +585,22 @@ btnback {
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.829);
 }
 
-/* När man hoovrar på knappen för länderna */
+.btnback {
+    color: rgb(0, 0, 0);
+    background-color: #df9d0f;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-decoration-line: none;
+    transition: 0.3s;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.829);
+    margin-left: 1rem;
+}
+
+/* När man hoovrar på knapparna för länderna */
 .indexbtn:hover {
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.829);
     background-color: chocolate;
@@ -601,7 +614,7 @@ btnback {
     color: white;
 }
 
-/* När man klickar på knappen så ändras färgen */
+/* När man klickar på knapparna så ändras färgen */
 .indexbtn:active {
     background-color: rgb(31, 71, 88);
     color: white;
@@ -624,18 +637,20 @@ btnback {
     margin-bottom: 100px;
 }
 
+.imgtanzania {
+    width: 95%;
+    height: auto;
+    border-radius: 15px;
+}
 
 .Zanzibar {
     max-width: 1100px;
     margin: 0 auto;
-    /* centrera containern på sidan */
     display: flex;
     flex-wrap: wrap;
-    /* tillåt radbyte på små skärmar */
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    /* centrera barn horisontellt */
     padding: 1rem;
     box-sizing: border-box;
 }
@@ -644,9 +659,9 @@ btnback {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    width: 450px;
     height: auto;
     order: 1;
+    border-radius: 15px;
 }
 
 .Zanzibar p,
@@ -677,21 +692,37 @@ btnback {
 .images {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    max-width: 400px;
+    margin-right: 5px;
+    border-radius: 15px;
+    gap: 1px;
 }
 
+.images img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
 .Venice {
+    width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    /* centrera containern på sidan */
     display: flex;
     flex-wrap: wrap;
-    /* tillåt radbyte på små skärmar */
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    /* centrera barn horisontellt */
     padding: 1rem;
     box-sizing: border-box;
+}
+
+.Venice img {
+    border-radius: 15px;
 }
 
 .Venice p {
@@ -704,6 +735,47 @@ btnback {
     font-weight: 700;
     box-sizing: border-box;
     list-style: none;
+}
+
+.artcroatia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    align-items: center;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.croatian {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: 5px;
+    border-radius: 15px;
+    margin: 0 auto;
+    gap: 1px;
+    box-sizing: border-box;
+}
+
+.croatian img {
+    flex: 0 0 calc(50% - 6px);
+    /* två kolumner med gap-kompensation */
+    max-width: calc(50% - 6px);
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.textcroatian {
+    width: 67%;
 }
 
 .btnback {
@@ -719,10 +791,12 @@ btnback {
     text-decoration-line: none;
     transition: 0.3s;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.829);
+    margin-left: 40px;
 }
 
 /* Hur dokumentet ska agera när man krymper fönstret för mindre enheter som tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
+
     header img {
         display: inline-block;
         max-width: 100%;
@@ -811,145 +885,233 @@ btnback {
         font-size: 0.9rem;
     }
 
-    /* Hur dokumentet ska agera när man krymper fönstret för mindre enheter som mobiler */
-    @media (max-width: 767px) {
-
-        /* Bild inom header */
-        header img {
-            display: inline-block;
-            max-width: 100%;
-            object-fit: contain;
-        }
-
-        /* Minskat gap */
-        .Headlist {
-            list-style: none;
-            display: flex;
-            gap: 0.6rem;
-            align-items: center;
-            margin: 0;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            white-space: nowrap;
-        }
-
-        /* Minskat font-storlek lite */
-        .Headlist li a {
-            font-size: 1rem;
-            font-weight: 700;
-            text-decoration: none;
-            color: #0b0b0b;
-            transition: 0.3s;
-            padding: 8px;
-            border: none;
-            transition: 0.3s;
-        }
-
-        /* Kolumn på allt inom "om oss" */
-        .About-inner,
-        .Aboutsecond,
-        img {
-            flex-direction: column;
-            width: 75%;
-        }
-
-        .pAbout {
-            width: 50%;
-        }
-
-        /* Flex istället för grid, allt i en kolumn */
-        .containercontact {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Inte längre position sticky */
-        .faq {
-            position: relative;
-            margin: 0 0 25px 0;
-            text-align: center;
-            align-self: center;
-            width: 90%;
-            max-width: 320px;
-        }
-
-        /* Bilderna inom "om oss" kolumn */
-        .imgbeach,
-        .imgmountain {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .headline {
-            margin-bottom: 15px;
-        }
-
-        /* Bilder och text i en kolumn inom "resor" */
-        .Articles {
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-        }
-
-        /* rubrik margin */
-        .Articles h2 {
-            margin: 10px;
-        }
-
-        /* förändrat bildstorlek */
-        .Articles img {
-            width: 70%;
-            height: auto;
-        }
-
-        /* Minskat font-size */
-        .Articles div {
-            text-align: center;
-            font-size: 13px;
-        }
-
-        .Travelsnow {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 75%;
-            height: auto;
-            margin: 25px auto;
-            line-height: 1.5rem;
-        }
-
-        .Tourist {
-            text-align: left;
-            margin: 20px;
-            margin-top: 50px;
-        }
-
-        .Tourist p {
-            font-weight: 900;
-        }
-
-        /* Footer */
-        .footer {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2px;
-            margin: 0;
-            font-size: 0.9rem;
-        }
-
-        .footer ul,
-        li {
-            font-size: 0.9rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-
+    /* Footer */
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        margin: 0;
+        font-size: 0.9rem;
     }
+
+    .footer ul,
+    li {
+        font-size: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgtanzania {
+        width: 100%;
+        height: auto;
+    }
+
+    .images img {
+        width: 80%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .Venice {
+        width: 80%;
+    }
+
+}
+
+/* Hur dokumentet ska agera när man krymper fönstret för mindre enheter som mobiler */
+@media (max-width: 767px) {
+
+    /* Bild inom header */
+    header img {
+        display: inline-block;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* Minskat gap */
+    .Headlist {
+        list-style: none;
+        display: flex;
+        gap: 0.6rem;
+        align-items: center;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        white-space: nowrap;
+    }
+
+    /* Minskat font-storlek lite */
+    .Headlist li a {
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #0b0b0b;
+        transition: 0.3s;
+        padding: 8px;
+        border: none;
+        transition: 0.3s;
+    }
+
+    /* Kolumn på allt inom "om oss" */
+    .About-inner,
+    .Aboutsecond,
+    img {
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .pAbout {
+        width: 50%;
+    }
+
+    /* Flex istället för grid, allt i en kolumn */
+    .containercontact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Inte längre position sticky */
+    .faq {
+        position: relative;
+        margin: 0 0 25px 0;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* Bilderna inom "om oss" kolumn */
+    .imgbeach,
+    .imgmountain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headline {
+        margin-bottom: 15px;
+    }
+
+    /* Bilder och text i en kolumn inom "resor" */
+    .Articles {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    /* rubrik margin */
+    .Articles h2 {
+        margin: 10px;
+    }
+
+    /* förändrat bildstorlek */
+    .Articles img {
+        width: 70%;
+        height: auto;
+    }
+
+    /* Minskat font-size */
+    .Articles div {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .Travelsnow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        height: auto;
+        margin: 25px auto;
+        line-height: 1.5rem;
+    }
+
+    .Tourist {
+        text-align: left;
+        margin: 20px;
+        margin-top: 50px;
+    }
+
+    .Tourist p {
+        font-weight: 900;
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .footer ul,
+    li {
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .About img {
+        width: 70%;
+        max-width: 300px;
+        width: auto;
+    }
+
+    .h3About {
+        width: 85%;
+    }
+
+    .btnback {
+        margin-left: 2rem;
+    }
+
+    .Tanzania {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    .imgtanzania {
+        width: 100%;
+        height: auto;
+    }
+
+    .Zanzibar {
+        display: none;
+    }
+
+    .textscreen {
+        display: none;
+    }
+
+    .textdolomit {
+        font-size: 0.9rem;
+    }
+
+    .images img {
+        width: 80%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .Venice {
+        display: none;
+    }
+
+    .textcroatian {
+        font-size: 0.8rem;
+    }
+
 }
