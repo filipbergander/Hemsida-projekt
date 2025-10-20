@@ -585,6 +585,8 @@ p {
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.829);
 }
 
+/* Knapp för att gå tillbaka till huvudsidan från undersidorna
+ italien, kroatien, afrika */
 .btnback {
     color: rgb(0, 0, 0);
     background-color: #df9d0f;
@@ -598,6 +600,26 @@ p {
     transition: 0.3s;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.829);
     margin-left: 1rem;
+}
+
+/* När man hoovrar över tillbakaknappen */
+.btnback:hover {
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.829);
+    background-color: chocolate;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Hur knappen ska agera när man exempelvis tabbat till den, för att göra den tydligare */
+.btnback:focus {                
+    background-color: rgb(21, 114, 94);
+    color: white;
+}
+
+/* När man klickar på knappen tillbaka så ändras färgen */
+.btnback:active {
+    background-color: rgb(31, 71, 88);
+    color: white;
 }
 
 /* När man hoovrar på knapparna för länderna */
@@ -624,6 +646,7 @@ p {
     margin: 5px;
 }
 
+/* Första bilden och texten, dess box, i en kolumn */
 .Tanzania {
     display: flex;
     flex-direction: column;
@@ -637,12 +660,14 @@ p {
     margin-bottom: 100px;
 }
 
+/* Bilden */
 .imgtanzania {
     width: 95%;
     height: auto;
     border-radius: 15px;
 }
 
+/* Andra bilden och texten, dess box centrerad */
 .Zanzibar {
     max-width: 1100px;
     margin: 0 auto;
@@ -655,6 +680,7 @@ p {
     box-sizing: border-box;
 }
 
+/* Bilden */
 .Zanzibar img {
     align-items: center;
     justify-content: center;
@@ -664,6 +690,7 @@ p {
     border-radius: 15px;
 }
 
+/* Brödtexten och en lista */
 .Zanzibar p,
 .Zanzibar ul {
     flex: 1;
@@ -677,6 +704,7 @@ p {
     list-style: none;
 }
 
+/* Bild och text under Italien, centrerade */
 .artitaly {
     display: flex;
     flex-direction: column;
@@ -689,6 +717,7 @@ p {
     margin-bottom: 100px;
 }
 
+/* Bilderna */
 .italian {
     display: flex;
     flex-direction: row;
@@ -714,10 +743,12 @@ p {
     border-radius: 15px;
 }
 
+/* Bredd på boxen för rubriker och brödtext */
 .textdolomit {
-    width: 50%;
+    width: 60%;
 }
 
+/* Rubrikerna  */
 .textdolomit h2,
 h3 {
     justify-content: center;
@@ -725,6 +756,7 @@ h3 {
     text-align: center;
 }
 
+/* Brödtexten */
 .textdolomit p {
     display: flex;
     text-align: left;
@@ -733,6 +765,7 @@ h3 {
 
 }
 
+/* Bredd och hur boxen ska agera, för Venedig-avsnittet */
 .Venice {
     width: 90%;
     max-width: 1100px;
@@ -746,10 +779,12 @@ h3 {
     box-sizing: border-box;
 }
 
+/* Bilden */
 .Venice img {
     border-radius: 15px;
 }
 
+/* Brödtexten */
 .Venice p {
     flex: 1;
     min-width: 400px;
@@ -762,6 +797,7 @@ h3 {
     list-style: none;
 }
 
+/* Bild och text och deras box inom Kroatien  */
 .artcroatia {
     display: flex;
     flex-direction: column;
@@ -774,6 +810,7 @@ h3 {
     margin-bottom: 100px;
 }
 
+/* Bildboxen */
 .croatian {
     display: flex;
     flex-direction: row;
@@ -788,6 +825,7 @@ h3 {
     box-sizing: border-box;
 }
 
+/* Bilderna */
 .croatian img {
     flex: 0 0 calc(50% - 6px);
     /* två kolumner med gap-kompensation */
@@ -799,10 +837,12 @@ h3 {
     border-radius: 15px;
 }
 
+/* Textboxen nedanför bilderna */
 .textcroatian {
     width: 50%;
 }
 
+/* Style för att gå tillbaka knapp på undersidorna till resor */
 .btnback {
     color: rgb(0, 0, 0);
     background-color: #df9d0f;
@@ -819,9 +859,29 @@ h3 {
     margin-left: 40px;
 }
 
-/* Hur dokumentet ska agera när man krymper fönstret för mindre enheter som tablets */
+/* Sitemap */
+.Sitemap {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Bilden på sitemapen */
+.Sitemap img {
+    margin-top: 25px;
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+    height: auto;
+}
+
+
+/* Hur dokumentet ska agera när man krymper fönstret för mindre enheter som tablets, mellan
+768 och 1024px*/
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    /* Header och logo */
     header img {
         display: inline-block;
         max-width: 100%;
@@ -900,6 +960,7 @@ h3 {
         text-align: left;
     }
 
+    /* Footern */
     .footer {
         display: flex;
         align-items: center;
@@ -910,17 +971,7 @@ h3 {
         font-size: 0.9rem;
     }
 
-    /* Footer */
-    .footer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 4px;
-        margin: 0;
-        font-size: 0.9rem;
-    }
-
+    /* Länkarna inom footer */
     .footer ul,
     li {
         font-size: 1rem;
@@ -929,9 +980,14 @@ h3 {
         align-items: center;
     }
 
+    /* Första bilden inom Afrika */
     .imgtanzania {
         width: 100%;
         height: auto;
+    }
+
+    .textdolomit {
+        width: 70%;
     }
 
     .Venice {
@@ -940,7 +996,7 @@ h3 {
 
 }
 
-/* Hur dokumentet ska agera när man krymper fönstret för mindre enheter som mobiler */
+/* Hur dokumentet ska agera under 767px när man krymper fönstret för mindre enheter som mobiler*/
 @media (max-width: 767px) {
 
     /* Bild inom header */
@@ -1042,6 +1098,7 @@ h3 {
         font-size: 13px;
     }
 
+    /* Textrutan längst ner på huvudsidan */
     .Travelsnow {
         display: flex;
         flex-direction: column;
@@ -1053,6 +1110,7 @@ h3 {
         line-height: 1.5rem;
     }
 
+    /* Li-element och rubrik inom textrutan */
     .Tourist {
         text-align: left;
         margin: 20px;
@@ -1074,6 +1132,7 @@ h3 {
         font-size: 0.9rem;
     }
 
+    /* Länkarna i footer */
     .footer ul,
     li {
         font-size: 0.9rem;
@@ -1082,6 +1141,7 @@ h3 {
         align-items: center;
     }
 
+    /* Bild inom om oss */
     .About img {
         width: 70%;
         max-width: 300px;
@@ -1092,6 +1152,7 @@ h3 {
         width: 85%;
     }
 
+    /* Dragit in knappen från vänster vid mindre upplösning */
     .btnback {
         margin-left: 2rem;
     }
@@ -1106,10 +1167,12 @@ h3 {
         height: auto;
     }
 
+    /* Visar inte detta avsnitt, bild och text vid mindre skärmar */
     .Zanzibar {
         display: none;
     }
 
+    /* Visar inte detta avsnitt vid mindre skärmar */
     .textscreen {
         display: none;
     }
@@ -1118,16 +1181,18 @@ h3 {
         font-size: 0.9rem;
     }
 
-    .images img {
-        width: 80%;
-        height: auto;
-        border-radius: 15px;
-    }
-
+    /* Visar inte venedig bild och text vid mindre skärmar */
     .Venice {
         display: none;
     }
 
+    /* Texten och dess ram för inom Italien.html */
+    .textdolomit p {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    /* Text inom kroatien.html */
     .textcroatian {
         font-size: 0.8rem;
     }
