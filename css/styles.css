@@ -1211,8 +1211,16 @@ h3 {
         width: 90%;
     }
 
+    /* Sitemap vid mindre skärmar */
     .Sitemap {
         width: 100%;
         height: auto;
+    }
+
+    /* Större marginal till vänster för att få in checkboxarna för att göra
+det lättare att klicka på dem i mobilläget */
+    #Ring,
+    .Agree {
+        margin-left: 15px;
     }
 }
