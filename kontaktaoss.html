@@ -16,17 +16,17 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="bilder/Aktuell.svg" alt="Företagslogga, Ventures from Scandinavia">
+            <img src="bilder/aktuell.svg" alt="Företagslogga, Ventures from Scandinavia">
         </a>
     </header>
     <nav>
-        <ul class="Headlist">
+        <ul class="headlist">
             <li><a href="index.html">Resor</a></li>
             <li><a href="kontaktaoss.html">Kontakta oss</a></li>
             <li><a href="omoss.html">Om oss</a></li>
         </ul>
     </nav>
-    <h1>Kontakta oss</h1>
+    <h1 class="rubrikcontact">Kontakta oss</h1>
     <div class="containercontact">
         <div class="faq">
             <h2>FAQ</h2>
@@ -46,7 +46,8 @@
                 <li>
                     <h4> Vart avråder ni att resa till?</h4>
                     <p> I alla våra tjänster upprätthåller vi hög kvalité och tummar aldrig på ert välbefinnande.
-                        Vi följer<a href="https://www.regeringen.se/ud-avrader/" target="_blank"> UD och deras avrådanden.</a>
+                        Vi följer<a href="https://www.regeringen.se/ud-avrader/" target="_blank"> UD och deras
+                            avrådanden.</a>
                     </p>
                 </li>
                 <li>
@@ -58,39 +59,51 @@
                 </li>
             </ul>
         </div>
-        <div class="formarea">
-            <form>
-                <input name="name" type="text" class="feedback-input" placeholder="Ditt namn">
-                <input name="email" type="text" class="feedback-input" placeholder="Din email">
-                <input name="phone" type="text" class="feedback-input" placeholder="Telefonnummer">
-                <textarea name="text" class="feedback-input" placeholder="Beskriv hur jag kan hjälpa dig"></textarea>
-                <input type="checkbox" id="Ring" name="Ring upp" value="Ring upp"> Ring upp mig<br>
-                <input type="checkbox" class="Agree" name="Samtycke" value="Samtycke">
-                Genom att skicka in dina uppgifter samtycker du till vår <a href="policy.html">integritetspolicy</a>.
-                <input type="submit" value="Skicka">
-            </form>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <div class="newsletter">
-                        <h2>Prenumerera på vårat nyhetsbrev</h2>
-                        <p>Håll dig uppdaterad på våra senaste erbjudanden och sista minuten!</p>
-                        <form>
-                            <div class="form-group">
-                                <input type="email" class="Epostinput" placeholder="E-post" required>
-                            </div>
-                            <input type="checkbox" id="Agree" name="Samtycke" value="Samtycke">
-                            Jag samtycker till att ta emot nyhetsbrev från Ad & Jo i enlighet med <a
-                                href="policy.html">integritetspolicyn</a>.
-                            <button type="submit" class="btn btn-primary">Prenumerera</button>
-                        </form>
-                        <img src="bilder/Egypt.jpg" alt="Egypten, palmer och hav" id="Egypt">
-                    </div>
-                </div>
+        <fieldset>
+            <legend class="contact">Kontaktformulär & samtycke</legend>
+            <div class="formarea">
+                <form>
+                    <label for="name">Ditt namn</label>
+                    <input id="name" name="name" type="text" class="feedbackinput" placeholder="Ditt namn">
+                    <label for="email">Din e-postadress</label>
+                    <input id="email" name="email" type="email" class="feedbackinput" placeholder="Din e-postadress">
+                    <label for="phone">Telefonnummer</label>
+                    <input id="phone" name="phone" type="tel" class="feedbackinput" placeholder="Telefonnummer">
+                    <label for="text">Hur kan jag hjälpa dig?</label>
+                    <textarea id="text" name="text" class="feedbackinput"
+                        placeholder="Beskriv hur jag kan hjälpa dig"></textarea>
+                    <label for="Ring">
+                        <input type="checkbox" class="ring" name="Ring upp" value="Ring upp">
+                        Ring upp mig</label><br>
+                    <label for="Samtycke">
+                        <input type="checkbox" class="agree" name="Samtycke" value="Samtycke">
+                        Jag samtycker till att mina uppgifter behandlas enligt <a
+                            href="policy.html">integritetspolicyn</a>.
+                    </label>
+                    <input type="submit" value="Skicka">
+                </form>
             </div>
-        </div>
+        </fieldset>
+        <form>
+            <div class="newsletter">
+                <h2>Prenumerera på vårat nyhetsbrev</h2>
+                <p>Håll dig uppdaterad på våra senaste erbjudanden och sista minuten!</p>
+                <form>
+                    <div class="formgroup">
+                        <label for="Epost">E-postadress</label>
+                        <input type="email" id="Epost" class="epostinput" placeholder="E-post" required>
+                    </div>
+                    <label for="Agree">
+                        <input type="checkbox" id="Agree" name="Samtycke" value="Samtycke">
+                        Jag samtycker till att ta emot nyhetsbrev från Ad & Jo enligt <a
+                            href="policy.html">integritetspolicyn</a>.
+                    </label>
+                    <button type="submit" class="btnprimary">Prenumerera</button>
+                </form>
+                <img src="bilder/egypt.jpg" alt="Egypten, palmer och hav" class="egypt">
+            </div>
     </div>
+    </form>
     <div class="footer">
         <footer>
             <ul>

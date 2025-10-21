@@ -12,11 +12,15 @@ h1 {
     margin-bottom: 0;
 }
 
+main {
+    flex: 1;
+}
+
 /* Body, flex och i kolumner */
 body {
     display: flex;
     flex-direction: column;
-    font-family: "Poppins", sans-serif;
+    font-family: "Newsreader", serif;
     background-color: #FAF3E0;
     color: black;
     min-height: 100vh;
@@ -64,7 +68,7 @@ nav {
 }
 
 /* Navigeringslänkar under header */
-.Headlist {
+.headlist {
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -79,7 +83,7 @@ nav {
 }
 
 /* Style på länkarna */
-.Headlist li a {
+.headlist li a {
     font-size: 1.15rem;
     font-weight: 700;
     text-decoration: none;
@@ -92,14 +96,14 @@ nav {
 }
 
 /* När man hoovrar på länkarna */
-.Headlist li a:hover {
+.headlist li a:hover {
     background-color: #026464;
     color: #ffffff;
     text-shadow: 0 0 10px rgb(245, 243, 243);
 }
 
 /* När man exempelvis tabbar på länkarna, ram runt upp blir svart */
-.Headlist li a:focus {
+.headlist li a:focus {
     outline: 3px solid #000000;
     outline-offset: 2px;
     border-radius: 4px;
@@ -175,10 +179,23 @@ nav {
     margin: 0 auto;
 }
 
+/* Kontaktformulärets ram, margin mot huvudrubrik */
+fieldset {
+    margin-top: 30px;
+    border: none;
+}
+
+.contact {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Newsreader", serif;
+    font-weight: 600;
+}
+
 /* Inputs för namn, telefon och mail */
-.feedback-input {
+.feedbackinput {
     color: rgb(0, 0, 0);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Newsreader", serif;
     font-weight: 500;
     font-size: 18px;
     border-radius: 5px;
@@ -193,7 +210,7 @@ nav {
     outline: 0;
 }
 
-.feedback-input:focus {
+.feedbackinput:focus {
     border: 2px solid #CC4949;
 }
 
@@ -206,7 +223,7 @@ textarea {
 
 /* Knapp Skicka i formuläret */
 [type="submit"] {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: "Newsreader", serif;
     width: 100%;
     background: #CC6666;
     border-radius: 5px;
@@ -263,7 +280,7 @@ p {
 }
 
 /* Där man skriver in sin epost i nyhetsbrevet */
-.newsletter .Epostinput {
+.newsletter .epostinput {
     height: 40px;
     width: 100%;
     max-width: 400px;
@@ -272,12 +289,12 @@ p {
     border: 1px solid #ccc;
 }
 
-.newsletter .form-group {
+.newsletter .formgroup {
     margin-bottom: 1.5rem;
 }
 
 /* Knappen prenumerera i nyhetsbrevet */
-.newsletter .btn-primary {
+.newsletter .btnprimary {
     margin: 0;
     background-color: #337ab7;
     border-color: #2e6da4;
@@ -288,7 +305,7 @@ p {
 }
 
 /* När man hoovrar på knappen prenumerera */
-.newsletter .btn-primary:hover {
+.btnprimary:hover {
     background-color: #23527c;
     border-color: #204d74;
     margin-bottom: 10px;
@@ -296,13 +313,13 @@ p {
 }
 
 /* Bild inom ramen för nyhetsbrevet */
-#Egypt {
+.egypt {
     border-radius: 6px;
     margin-top: 0;
 }
 
 /* Hur integritetpolicy sektionen ska se ut */
-.Policy {
+.policy {
     text-align: left;
     line-height: 1.6;
     margin: 50px auto;
@@ -313,7 +330,7 @@ p {
 }
 
 /* Hur Terms of use sektionen ska se ut */
-.Terms {
+.terms {
     text-align: left;
     line-height: 1.6;
     margin: 50px auto;
@@ -377,7 +394,7 @@ p {
 }
 
 /* Sidan om oss, flexbox */
-.About {
+.about {
     text-align: center;
     width: 90%;
     max-width: 1100px;
@@ -390,7 +407,7 @@ p {
 }
 
 /* Huvudrubriken inom om oss sidan */
-.About h1 {
+.about h1 {
     width: 100%;
     text-align: center;
     margin-bottom: 40px;
@@ -398,19 +415,19 @@ p {
 }
 
 /* Underrubrik, marginal mot det element som är över */
-.About .h3About {
+.about h3{
     margin-top: 25px;
 
 }
 
 /* Paragraf, brödtexten mellan bilderna */
-.About .pAbout {
+.pabout {
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 /* Flexbox, första artikeln */
-.About-inner {
+.aboutinner {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -418,7 +435,7 @@ p {
 }
 
 /* Brödtexten till vänster om första bilden */
-.About-inner p {
+.aboutinner p {
     max-width: 50ch;
     width: auto;
     /* låt texten anpassa sig i flex-bredden */
@@ -433,7 +450,7 @@ p {
 }
 
 /* Första bilden */
-.About-inner .imgbeach {
+.aboutinner .imgbeach {
     flex: 0 0 450px;
     width: 450px;
     height: auto;
@@ -444,7 +461,7 @@ p {
 }
 
 /* Andra artikeln, flexbox */
-.Aboutsecond {
+.aboutsecond {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -452,7 +469,7 @@ p {
 }
 
 /* Andra textspalten och bilden */
-.Aboutsecond .imgmountain {
+.aboutsecond .imgmountain {
     flex: 0 0 450px;
     width: 450px;
     height: 350px;
@@ -464,7 +481,7 @@ p {
 }
 
 /* Brödtexten inom andra */
-.Aboutsecond p {
+.aboutsecond p {
     flex: 1 1 auto;
     order: 2;
     max-width: 50ch;
@@ -482,7 +499,7 @@ p {
 }
 
 /* Sektion längst ner på Resor, med bakgrundsbild som liknar himmel  */
-.Textbox {
+.textbox {
     background-color: rgb(177, 214, 214);
     padding: 15px;
     text-align: center;
@@ -490,7 +507,7 @@ p {
 }
 
 /* Text och rubrik för inom resor, sektion drömresa */
-.Travelsnow {
+.travelsnow {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -504,20 +521,25 @@ p {
 }
 
 /* Brödtext under bilder på Resor */
-.Travelsnow p {
+.travelsnow p {
     color: #000000;
 }
 
 /* Text till vänster  */
-.Tourist {
+.tourist {
     text-align: left;
     margin-top: 15px;
     margin-left: 20rem;
     line-height: 1.4;
 }
 
+/* Rubrik som står ovanför texten till klass Tourist, till vänster som texten */
+.tourist h3 {
+    text-align: left;
+}
+
 /* Kontakta oss knapp */
-.Contactbtn {
+.contactbtn {
     color: rgb(0, 0, 0);
     background-color: #1eacac;
     border: none;
@@ -532,7 +554,7 @@ p {
 }
 
 /* När man hoovrar på knappen */
-.Contactbtn:hover {
+.contactbtn:hover {
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.829);
     background-color: chocolate;
     color: white;
@@ -540,32 +562,32 @@ p {
 }
 
 /* Inställningar för hur knappen ska agera när man exempelvis tabbat till den, för att göra den tydligare */
-.Contactbtn:focus {
+.contactbtn:focus {
     background-color: rgb(21, 114, 94);
     color: white;
 }
 
 /* När man klickar på knappen så ändras färgen */
-.Contactbtn:active {
+.contactbtn:active {
     background-color: rgb(31, 71, 88);
     color: white;
 }
 
 /* Bild och text för artiklarna inom resor, flexbox */
-.Articles {
+.articles {
     display: flex;
     margin: 30px;
     justify-content: center;
 }
 
 /* Bilder inom articles för sidan Resor */
-.Articles img {
+.articles img {
     width: 80%;
     height: auto;
     border-radius: 25px;
 }
 
-.Articles div {
+.articles div {
     text-align: center;
     font-size: 15px;
 }
@@ -642,17 +664,17 @@ p {
     color: white;
 }
 
-.Articles h3 {
+.articles h3 {
     margin: 5px;
 }
 
 /* Första bilden och texten, dess box, i en kolumn */
-.Tanzania {
+.tanzania {
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     align-items: center;
     margin: 0 auto;
     line-height: 1.6;
@@ -668,40 +690,53 @@ p {
 }
 
 /* Andra bilden och texten, dess box centrerad */
-.Zanzibar {
+.zanzibar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Rubrik */
+.zanzibar h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Ramen till zanzibar i flex, bild och text */
+.zanzibarrow {
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: 1rem;
+    width: 100%;
     box-sizing: border-box;
 }
 
 /* Bilden */
-.Zanzibar img {
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+.zanzibar img {
+    flex: 0 0 320px;
+    max-width: 100%;
+    width: 420px;
     height: auto;
-    order: 1;
-    border-radius: 15px;
+    border-radius: 6px;
+    object-fit: cover;
 }
 
-/* Brödtexten och en lista */
-.Zanzibar p,
-.Zanzibar ul {
-    flex: 1;
-    min-width: 400px;
-    width: 50%;
-    order: 2;
-    line-height: 1.7;
-    font-size: 1.1rem;
-    font-weight: 700;
+/* Texten */
+.zanzibar p {
+    flex: 1 1 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
-    list-style: none;
+    max-width: 500px;
+    line-height: 1.6;
+    font-size: 20px;
 }
 
 /* Bild och text under Italien, centrerade */
@@ -766,7 +801,7 @@ h3 {
 }
 
 /* Bredd och hur boxen ska agera, för Venedig-avsnittet */
-.Venice {
+.venice {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
@@ -780,12 +815,12 @@ h3 {
 }
 
 /* Bilden */
-.Venice img {
+.venice img {
     border-radius: 15px;
 }
 
 /* Brödtexten */
-.Venice p {
+.venice p {
     flex: 1;
     min-width: 400px;
     width: 50%;
@@ -860,7 +895,7 @@ h3 {
 }
 
 /* Sitemap */
-.Sitemap {
+.sitemap {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -869,7 +904,7 @@ h3 {
 }
 
 /* Bilden på sitemapen */
-.Sitemap img {
+.sitemap img {
     margin-top: 25px;
     display: block;
     margin: 0 auto;
@@ -890,7 +925,7 @@ h3 {
     }
 
     /* Navigeringslänkarna */
-    .Headlist {
+    .headlist {
         list-style: none;
         display: flex;
         gap: 1.5rem;
@@ -905,7 +940,7 @@ h3 {
     }
 
     /* Style på navigeringslänkarna */
-    .Headlist li a {
+    .headlist li a {
         font-size: 1.05rem;
         font-weight: 700;
         text-decoration: none;
@@ -918,45 +953,45 @@ h3 {
     }
 
     /* I en kolumn nu istället för på en rad, första bilden och texten */
-    .About .about-inner {
+    .about .aboutinner {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 0.75rem;
     }
 
-    .About img {
+    .about img {
         max-width: 60%;
         width: auto;
     }
 
     /* Kolumn */
-    .About,
-    .About-inner {
+    .about,
+    .aboutinner {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     /* kolumn för bild och text inom resor */
-    .Articles {
+    .articles {
         display: flex;
         flex-direction: column;
         margin: 30px;
     }
 
     /* Minskat bildstorleken */
-    .Articles img {
+    .articles img {
         width: 60%;
         height: auto;
     }
 
-    .Articles div {
+    .articles div {
         text-align: center;
         font-size: 15px;
     }
 
-    .Tourist {
+    .tourist {
         margin: 5px;
         text-align: left;
     }
@@ -981,17 +1016,16 @@ h3 {
         align-items: center;
     }
 
-    /* Första bilden inom Afrika */
-    .imgtanzania {
-        width: 100%;
-        height: auto;
+    /* Ramen för Tanzania, med text och bild */
+    .tanzania {
+        width: 80%;
     }
 
     .textdolomit {
         width: 70%;
     }
 
-    .Venice {
+    .venice {
         width: 80%;
     }
 
@@ -1008,7 +1042,7 @@ h3 {
     }
 
     /* Minskat gap */
-    .Headlist {
+    .headlist {
         list-style: none;
         display: flex;
         gap: 0.6rem;
@@ -1023,7 +1057,7 @@ h3 {
     }
 
     /* Minskat font-storlek lite */
-    .Headlist li a {
+    .headlist li a {
         font-size: 1rem;
         font-weight: 700;
         text-decoration: none;
@@ -1035,13 +1069,13 @@ h3 {
     }
 
     /* Kolumn på allt inom "om oss" */
-    .About-inner,
-    .Aboutsecond {
+    .aboutinner,
+    .aboutsecond {
         flex-direction: column;
         width: 75%;
     }
 
-    .pAbout {
+    .pabout {
         width: 50%;
     }
 
@@ -1076,31 +1110,31 @@ h3 {
     }
 
     /* Bilder och text i en kolumn inom "resor" */
-    .Articles {
+    .articles {
         display: flex;
         flex-direction: column;
         margin: 20px;
     }
 
     /* rubrik margin */
-    .Articles h2 {
+    .articles h2 {
         margin: 10px;
     }
 
     /* förändrat bildstorlek */
-    .Articles img {
+    .articles img {
         width: 90%;
         height: auto;
     }
 
     /* Minskat font-size */
-    .Articles div {
+    .articles div {
         text-align: center;
         font-size: 13px;
     }
 
     /* Textrutan längst ner på huvudsidan */
-    .Travelsnow {
+    .travelsnow {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1112,13 +1146,13 @@ h3 {
     }
 
     /* Li-element och rubrik inom textrutan */
-    .Tourist {
+    .tourist {
         text-align: left;
         margin: 20px;
         margin-top: 50px;
     }
 
-    .Tourist p {
+    .tourist p {
         font-weight: 900;
     }
 
@@ -1143,13 +1177,13 @@ h3 {
     }
 
     /* Bild inom om oss */
-    .About img {
+    .about img {
         width: 70%;
         max-width: 300px;
         width: auto;
     }
 
-    .h3About {
+    .about h3 {
         width: 85%;
     }
 
@@ -1158,7 +1192,7 @@ h3 {
         margin-left: 2rem;
     }
 
-    .Tanzania {
+    .tanzania {
         width: 80%;
         font-size: 0.9rem;
     }
@@ -1169,7 +1203,7 @@ h3 {
     }
 
     /* Visar inte detta avsnitt, bild och text vid mindre skärmar */
-    .Zanzibar {
+    .zanzibar {
         display: none;
     }
 
@@ -1183,7 +1217,7 @@ h3 {
     }
 
     /* Visar inte venedig bild och text vid mindre skärmar */
-    .Venice {
+    .venice {
         display: none;
     }
 
@@ -1207,21 +1241,21 @@ h3 {
     }
 
     /* Vidden till 90% vid mindre enheter */
-    .Terms,
-    .Policy {
+    .terms,
+    .policy {
         width: 90%;
     }
 
     /* Sitemap vid mindre skärmar */
-    .Sitemap {
+    .sitemap {
         width: 100%;
         height: auto;
     }
 
     /* Större marginal till vänster för att få in checkboxarna för att göra
 det lättare att klicka på dem i mobilläget */
-    #Ring,
-    .Agree {
+    .ring,
+    .agree {
         margin-left: 15px;
     }
 }
