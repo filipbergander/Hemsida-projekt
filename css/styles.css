@@ -12,6 +12,7 @@ h1 {
     margin-bottom: 0;
 }
 
+/* För att footern ska komma ner till botten på sidan sitemap.html */
 main {
     flex: 1;
 }
@@ -250,8 +251,7 @@ textarea {
     justify-self: center;
     width: 100%;
     max-width: 420px;
-    height: 90%;
-    /* samma bredd som formuläret */
+    height: 95%;
     margin: 12px;
     padding: 20px;
     background-color: #f7f7f7;
@@ -260,6 +260,7 @@ textarea {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     gap: 1px;
     background-color: rgb(177, 214, 214);
+    overflow: hidden;
 }
 
 /* Bild inom nyhetsbrevet */
@@ -314,7 +315,9 @@ p {
 
 /* Bild inom ramen för nyhetsbrevet */
 .egypt {
-    border-radius: 6px;
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
     margin-top: 0;
 }
 
@@ -415,7 +418,7 @@ p {
 }
 
 /* Underrubrik, marginal mot det element som är över */
-.about h3{
+.about h3 {
     margin-top: 25px;
 
 }
