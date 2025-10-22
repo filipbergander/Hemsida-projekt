@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> <!-- Hämtat in font från Google fonts -->
 </head>
 
 <body>
     <header>
-        <a href="index.html">
+        <a href="index.html"> <!-- Klickbar header som är lika på hela hemsidan för navigering till startsidan -->
             <img src="bilder/logo.svg" alt="Företagslogga, Ventures from Scandinavia">
         </a>
     </header>
-    <nav>
+    <nav> <!-- Navigeringslänkar till huvudsida och undersidor,
+             valde att ta med denna startsida i navigeringen, index.html, trots att man kan trycka på header, bara för att det ska vara lika på alla sidor -->
         <ul class="headlist">
             <li><a href="index.html">Resor</a></li>
             <li><a href="kontaktaoss.html">Kontakta oss</a></li>
@@ -27,8 +28,8 @@
         </ul>
     </nav>
     <h1 class="headline">Resor</h1>
-    <article class="articles">
-        <div class="croatia">
+    <article class="articles"> <!-- Bilder och rubriker för resor, samt knappar för navigering till varje undersida -->
+        <div class="croatia"> <!-- Kroatien resor -->
             <h2>
                 <i>Lugna och fina Kroatien</i>
             </h2>
@@ -38,7 +39,7 @@
             <button type="button" class="indexbtn" onclick="location.href='kroatien.html'">Kroatien</button>
         </div>
         <br>
-        <div class="italy">
+        <div class="italy"> <!-- Italienska resor -->
             <h2><i>Populära Italien & kulturen</i></h2>
             <img src="bilder/cinqueterre.jpg" alt="Ute på ett hav med en stad inne på land med färgglada hus">
             <img src="bilder/sanremo.jpg" alt="Parkering utanför kasino i Sanremo">
@@ -46,7 +47,7 @@
             <button type="button" class="indexbtn" onclick="location.href='italien.html'">Italien</button>
         </div>
         <br>
-        <div class="africa">
+        <div class="africa">  <!-- Afrika resor -->
             <h2><i>Det stora äventyret i Afrika</i> </h2>
             <img src="bilder/savannafrika.jpg" alt="Zebra med Savann i bakgrunden">
             <img src="bilder/zanzibar.jpg" alt="Strand med en båt som ligger ute i havet">
@@ -54,7 +55,7 @@
             <button type="button" class="indexbtn" onclick="location.href='afrika.html'">Afrika</button>
         </div>
     </article>
-    <section class="textbox">
+    <section class="textbox">  <!-- Budskap och sälj för resor -->
         <div class="travelsnow">
             <h2><b>Din drömresa börjar här.</b></h2><br>
             <p><b>Karibien, Egypten eller vart du än vill och vi gör det möjligt.<br>
@@ -64,7 +65,7 @@
                     Vi tar hand om detaljerna, så att du kan fokusera på det viktigaste, att njuta av upplevelsen.</b>
             </p>
         </div>
-        <div class="tourist">
+        <div class="tourist">  <!-- Populära resor -->
             <h3>De mest populära turistmålen just nu:</h3>
             <ul>
                 <li><i>Sardinien</i></li>
@@ -74,12 +75,12 @@
             </ul>
             <br>
             <button type="button" class="contactbtn" onclick="location.href='kontaktaoss.html'">Intresserad?
-                <br>Kontakta oss</button>
+                <br>Kontakta oss</button>  <!-- Knapp för navigering till kontakta oss -->
         </div>
     </section>
     <div class="footer">
         <footer>
-            <ul>
+            <ul> <!-- Footer med copyright och två navigeringslänkar till sidor -->
                 <li><a href="policy.html">Terms & Policy</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
             </ul>

@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> <!-- Hämtat in font från Google fonts -->
 </head>
 
 <body>
     <header>
-        <a href="index.html">
+        <a href="index.html"> <!-- Klickbar header som är lika på hela hemsidan för navigering till startsidan -->
             <img src="bilder/logo.svg" alt="Företagslogga, Ventures from Scandinavia">
         </a>
     </header>
-    <nav>
+    <nav> <!-- Navigeringslänkar till huvudsida och undersidor,
+             valde att ta med startsidan, resor, trots att man kan trycka på header -->
         <ul class="headlist">
             <li><a href="index.html">Resor</a></li>
             <li><a href="kontaktaoss.html">Kontakta oss</a></li>
@@ -27,8 +28,8 @@
         </ul>
     </nav>
     <h1 class="rubrikcontact">Kontakta oss</h1>
-    <div class="containercontact">
-        <div class="faq">
+    <div class="containercontact"> 
+        <div class="faq"> <!-- FAQ, vanligt ställande frågor och svar -->
             <h2>FAQ</h2>
             <br>
             <ul>
@@ -47,7 +48,7 @@
                     <h4> Vart avråder ni att resa till?</h4>
                     <p> I alla våra tjänster upprätthåller vi hög kvalité och tummar aldrig på ert välbefinnande.
                         Vi följer<a href="https://www.regeringen.se/ud-avrader/" target="_blank"> UD och deras
-                            avrådanden.</a>
+                            avrådanden.</a> <!-- Absolut länk till annan hemsida  -->
                     </p>
                 </li>
                 <li>
@@ -61,7 +62,7 @@
         </div>
         <fieldset>
             <legend class="contact">Kontaktformulär & samtycke</legend>
-            <div class="formarea">
+            <div class="formarea"> <!-- Kontaktformulär, med knapp för att skicka meddelande, ej funktionalitet -->
                 <form>
                     <label for="name">Ditt namn</label>
                     <input id="name" name="name" type="text" class="feedbackinput" placeholder="Ditt namn">
@@ -84,7 +85,7 @@
                 </form>
             </div>
         </fieldset>
-        <div class="newsletter">
+        <div class="newsletter"> <!-- Nyhetsbrev, med knapp för att prenumerera, ej funktionalitet -->
             <h2>Prenumerera på vårat nyhetsbrev</h2>
             <p>Håll dig uppdaterad på våra senaste erbjudanden och sista minuten!</p>
             <form>
@@ -99,12 +100,12 @@
                 </label>
                 <button type="submit" class="btnprimary">Prenumerera</button>
             </form>
-            <img src="bilder/egypt.jpg" alt="Egypten, palmer och hav" class="egypt">
+            <img src="bilder/egypt.jpg" alt="Egypten, palmer och hav" class="egypt"> <!-- Bild längst ner på nyhetsbrevet -->
         </div>
     </div>
     <div class="footer">
         <footer>
-            <ul>
+            <ul> <!-- Footer med copyright och två navigeringslänkar till sidor -->
                 <li><a href="policy.html">Terms & Integritetspolicy</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
             </ul>

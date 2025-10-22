@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> <!-- Hämtat in font från Google fonts -->
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <img src="bilder/logo.svg" alt="Företagslogga, Ventures from Scandinavia">
+        <a href="index.html"><!-- Klickbar header som är lika på hela hemsidan för navigering till startsidan -->
+            <img src="bilder/loggo (1).svg" alt="Företagslogga, Ventures from Scandinavia">
         </a>
     </header>
-    <nav>
+    <nav> <!-- Navigeringslänkar till huvudsida och undersidor,
+             valde att ta med startsidan, resor, trots att man kan trycka på header -->
         <ul class="headlist">
             <li><a href="index.html">Resor</a></li>
             <li><a href="kontaktaoss.html">Kontakta oss</a></li>
@@ -29,7 +30,7 @@
     <h1 class="headline">Italien</h1>
     <article>
         <br>
-        <div class="artitaly">
+        <div class="artitaly"><!-- Bilder och beskrivning med budskap för Italienska resor -->
             <div class="italian">
                 <img src="bilder/Dolomit.jpg" class="imgdolomit" alt="Berg och en bäck i Dolomiterna">
                 <img src="bilder/Braies.jpg" class="imgbraies" alt="Kanoter på en sjö bland berg">
@@ -41,41 +42,35 @@
                 </h3>
                 <p>I norra Italien reser sig Dolomiterna som ett mästerverk av natur och tid.
                     Här möts dramatiska bergstoppar, kristallklara sjöar och genuina alpbyar som bjuder på både
-                    stillhet
-                    och
-                    äventyr.<br>
+                    stillhet och äventyr.<br>
                     Vid Lago di Braies speglar sig bergen i turkost vatten, en plats så vacker att den nästan känns
                     overklig.
                     Vandra längs de slingrande lederna på sommaren, genom blommande alpängar och frisk fjälluft.
                     När vintern kommer förvandlas landskapet till ett paradis för skidåkare, med Selva Val Gardena
-                    som
-                    en av
-                    resebyråns mest uppskattade resemål.
-                    <br>
+                    som en av resebyråns mest uppskattade resemål. <br>
                     Oavsett årstid bjuder Dolomiterna på oförglömliga upplevelser, där naturens skönhet och stillhet
-                    skapar
-                    minnen som stannar kvar länge.
+                    skapar minnen som stannar kvar länge.
                 </p>
             </div>
         </div>
-        <div class="venice">
+        <div class="venice"> <!-- En liten mindre bild längst ned med beskrivning för Venedig -->
             <p>
                 <strong>Venedig</strong><br> En stad byggd på drömmar och speglingar.
                 Här åker gondolerna stilla genom kanalerna, förbi broar, palats och torg fyllda av historia och liv.
                 Venedig är en plats att uppleva med alla dina sinnen. <br>Är man intresserad av
                 att uppleva flera delar av norra Italien i samma resa, har vi nu ett kampanjerbjudande!<br>
                 <button type="button" class="indexbtn" onclick="location.href='kontaktaoss.html'">
-                    <br>Intresserad? Kontakta oss</button>
+                    <br>Intresserad? Kontakta oss</button> <!-- Knapp till sidan kontakta oss -->
             </p> <br>
             <img src="bilder/venedig.jpg" alt="Båt på flod i Venedig">
         </div>
     </article>
-    <div>
+    <div> <!-- Knapp för att gå tillbaka till den sidan man var innan, eftersom Italien är en undersida till resor -->
         <button class="btnback" onclick="history.back()">Tillbaka till resor</button>
     </div>
     <div class="footer">
         <footer>
-            <ul>
+            <ul> <!-- Footer med copyright och två navigeringslänkar till sidor -->
                 <li><a href="policy.html">Terms & Integritetspolicy</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
             </ul>

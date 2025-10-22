@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> <!-- Hämtat in font från Google fonts -->
 </head>
 
 <body>
     <header>
-        <a href="index.html">
+        <a href="index.html"> <!-- Klickbar header som är lika på hela hemsidan för navigering till startsidan -->
             <img src="bilder/logo.svg" alt="Företagslogga, Ventures from Scandinavia">
         </a>
     </header>
-    <nav>
+    <nav> <!-- Navigeringslänkar till huvudsida och undersidor,
+             valde att ta med startsidan, resor, trots att man kan trycka på header -->
         <ul class="headlist">
             <li><a href="index.html">Resor</a></li>
             <li><a href="kontaktaoss.html">Kontakta oss</a></li>
@@ -27,59 +28,51 @@
         </ul>
     </nav>
     <h1 class="headline">Afrika</h1>
-    <article>
+    <article> <!-- Bild och beskrivning med budskap för en Afrika resa -->
         <br>
         <div class="tanzania">
             <img src="bilder/zebra.jpg" class="imgtanzania" alt="Zebra på en savann i afrika">
-            <p>
-            <h2>Tanzania </h2><b>Detta är vår favoritdestination att resa till inom Ad & Jo Scandinavia.</b> Här kan du
-            följa
-            med på en
-            resa genom Tanzanias
-            mest storslagna landskap, från Serengetis oändliga vidder till
-            Ngorongoro kraterns sluttningar och Tarangires floddalar.
-            Här möter du savannens rytm, zebrans elegans och lejonens kraft, där varje ögonblick berättar sin egen
-            historia.
-            <br>
-            När solen går ner över horisonten och färgar himlen i guld och rött väcks känslan av hur mäktig och levande
-            världen verkligen kan vara.
-            Vi skapar resor som låter dig uppleva Afrikas själ på riktigt där man är i naturen, och med respekt för
-            det vilda. Vi erbjuder även möjlighet att sova över ute i naturen, med säkerhet, och där man kan uppleva
-            lejonens rytande i gryningen.
-            Det här är mer än en destination. Det är ett äventyr du bär med dig för alltid.
+            <h2>Tanzania </h2>
+            <b> Detta är vår favoritdestination att resa till inom Ad & Jo Scandinavia.</b>
+            <p> Här kan du följa med på en resa genom Tanzanias mest storslagna landskap, från Serengetis oändliga vidder till
+                Ngorongoro kraterns sluttningar och Tarangires floddalar.
+                Här möter du savannens rytm, zebrans elegans och lejonens kraft, där varje ögonblick berättar sin egen historia.
+                <br>
+                När solen går ner över horisonten och färgar himlen i guld och rött väcks känslan av hur mäktig och levande
+                världen verkligen kan vara.
+                Vi skapar resor som låter dig uppleva Afrikas själ på riktigt där man är i naturen, och med respekt för
+                det vilda. Vi erbjuder även möjlighet att sova över ute i naturen, med säkerhet, och där man kan uppleva
+                lejonens rytande i gryningen.
+                Det här är mer än en destination. Det är ett äventyr du bär med dig för alltid.
             </p>
         </div>
         <div class="zanzibar">
             <h2>Zanzibar</h2>
-            <div class="zanzibarrow">
+            <div class="zanzibarrow"> <!-- Bild och beskrivning med budskap för en till Afrika resa -->
                 <img src="bilder/paddor.jpg" class="imgzanzibar" alt="Havssköldpaddor i vatten">
-                <p>
-                    Börja dagen med en stilla promenad längs stranden i
-                    Nungwi, där fiskebåtarna
-                    sakta
-                    glider
+                <p> Börja dagen med en stilla promenad längs stranden i Nungwi, där fiskebåtarna sakta glider
                     in efter nattens fångst. Du kan snorkla eller dyka bland korallrev som sjuder av liv, eller följa
                     med på en
                     båttur för att simma med delfiner i det öppna havet eller med sjöpaddor. För den som söker lugn och
                     avkoppling är öns många
-                    hotell och strandresorter perfekta för att bara njuta av solen, havet och den varma
-                    gästfriheten.<br>
-                    För familjer: trygga stränder, vänliga människor och spännande utflykter.<br>
+                    hotell och strandresorter perfekta för att bara njuta av solen, havet och den varma gästfriheten.<br>
+                    <br>För familjer: trygga stränder, vänliga människor och spännande utflykter.<br>
                     För par: romantiska solnedgångar, exklusiva resorter och en känsla av att vara långt bort från
                     vardagen.<br>
                     För äventyrare: dykning, snorkling, segling och upptäcktsfärder i både natur och kultur.<br>
                 </p>
             </div>
             <button type="button" class="indexbtn" onclick="location.href='kontaktaoss.html'">
-                <br>Mer information? Kontakta oss</button>
+                <br>Mer information? Kontakta oss</button> <!-- Knapp till sidan kontakta oss -->
         </div>
         <div>
+            <!-- Knapp för att gå tillbaka till den sidan man var innan, eftersom Afrika är en undersida till resor -->
             <button class="btnback" onclick="history.back()">Tillbaka till resor</button>
         </div>
     </article>
     <div class="footer">
         <footer>
-            <ul>
+            <ul> <!-- Footer med copyright och två navigeringslänkar till sidor -->
                 <li><a href="policy.html">Terms & Integritetspolicy</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
             </ul>
