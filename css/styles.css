@@ -550,6 +550,9 @@ p {
     border: none;
     cursor: pointer;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     font-size: 15px;
     padding: 10px 16px;
     border-radius: 4px;
@@ -576,6 +579,15 @@ p {
 .contactbtn:active {
     background-color: rgb(31, 71, 88);
     color: white;
+}
+
+/* Div till knapp för att boka resa, navigering till sidan kontakta oss, centrerad */
+.booktrip {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin: 10px;
 }
 
 /* Bild och text för artiklarna inom resor, flexbox */
@@ -639,13 +651,15 @@ p {
     border: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 15px;
-    padding: 10px 16px;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 4px;
+    text-align: center;
     border-radius: 4px;
     text-decoration-line: none;
     transition: 0.3s;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.829);
-    margin-left: 1rem;
+    margin-left: 40px;
 }
 
 /* När man hoovrar över tillbakaknappen */
@@ -907,22 +921,9 @@ h3 {
     min-width: 700px;
 }
 
-/* Style för att gå tillbaka knapp på undersidorna till resor */
-.btnback {
-    color: rgb(0, 0, 0);
-    background-color: #df9d0f;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 4px;
-    text-align: center;
-    border-radius: 4px;
-    text-decoration-line: none;
-    transition: 0.3s;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.829);
-    margin-left: 40px;
-}
+
+/* Knapp för att gå tillbaka till huvudsidan från undersidorna
+ italien, kroatien, afrika */
 
 /* Sitemap */
 .sitemap {
@@ -1305,11 +1306,6 @@ h3 {
     /* Text inom kroatien.html */
     .textcroatian p {
         font-size: 0.9rem;
-    }
-
-    /* Visar inte knappen */
-    .btncroatia {
-        display: none;
     }
 
     /* Vidden till 90% vid mindre enheter */
