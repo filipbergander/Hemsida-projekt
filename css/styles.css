@@ -614,6 +614,7 @@ p {
     line-height: 1.25;
 }
 
+/* Inom sidan resor och respektive bild och text */
 .articles div {
     box-sizing: border-box;
     align-items: center;
@@ -1012,7 +1013,6 @@ h3 {
 
     /* Ökat min-width, minskat font */
     .articles div {
-        gap: none;
         min-width: 230px;
         font-size: 14px;
     }
