@@ -1115,7 +1115,7 @@ h3 {
     .aboutinner,
     .aboutsecond {
         flex-direction: column;
-        width: 75%;
+        width: 85%;
     }
 
     .pabout {
