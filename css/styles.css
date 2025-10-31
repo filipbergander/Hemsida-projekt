@@ -1349,14 +1349,6 @@ det lättare att klicka på dem i mobilläget */
     /* Hur dokumentet ska agera under 300px när man krymper minimalt, inte nödvändigt*/
     @media (max-width: 300px) {
 
-        /* Minskar bredden på bilden */
-        header img {
-            max-width: 80%;
-            align-items: center;
-            width: auto;
-            height: auto;
-        }
-
         /* Minskar gap */
         .headlist {
             gap: 0.3rem;
