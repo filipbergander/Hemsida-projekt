@@ -1021,9 +1021,8 @@ h3 {
         font-size: 0.9rem;
     }
 
-    /* Minskat bildstorleken och margin */
+    /* Minskat margin */
     .articles img {
-        height: auto;
         margin-bottom: 4px;
         object-fit: cover;
     }
@@ -1174,12 +1173,6 @@ h3 {
     .articles h2 {
         margin: 10px;
         font-size: 1.4rem;
-    }
-
-    /* förändrat bildstorlek */
-    .articles img {
-        width: 80%;
-        height: auto;
     }
 
     /* minskat font */
@@ -1362,8 +1355,6 @@ det lättare att klicka på dem i mobilläget */
             align-items: center;
             width: auto;
             height: auto;
-            max-height: 140px;
-            display: block;
         }
 
         /* Minskar gap */
@@ -1375,12 +1366,6 @@ det lättare att klicka på dem i mobilläget */
         .headlist li a {
             font-size: 0.8rem;
             padding: 6px;
-        }
-
-        /* förändrat bildstorlek */
-        .articles img {
-            width: 70%;
-            height: auto;
         }
     }
 }
